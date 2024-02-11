@@ -24,12 +24,12 @@ class App extends StatelessWidget {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text('Custom Switch'),
+                const Text('Custom Switch'),
                 CustomSwitch(
                   initialValue: false,
                   activeText: 'ON',
                   inactiveText: 'OFF',
-                  onChanged: (value) => print('Value: $value'),
+                  onChanged: (value) => debugPrint('Value: $value'),
                 ),
               ],
             ),
